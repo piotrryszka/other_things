@@ -22,6 +22,7 @@ def load_tiles():
     """
     tile_image = image.load('../images/tiles.xpm')
     tiles = {}
+    print(tiles)
     for symbol, x, y in TILE_POSITIONS:
         tiles[symbol] = get_tile_rect(x, y)
     return tile_image, tiles
