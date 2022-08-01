@@ -18,13 +18,27 @@ class FrenchDeck:
     def __getitem__(self, position):
         return self._cards[position]
 
-pierwsza_karta = Card('4','hearts')
+
+pierwsza_karta = Card('4', 'hearts')
 # print(pierwsza_karta)
 deck = FrenchDeck()
 # print(len(deck))
 # print(deck[0])
 # print(deck[-1])
-print(choice(deck))
-print(choice(deck))
-print(choice(deck))
 
+# for card in reversed(deck):
+#     print(card)
+
+# print(deck[12::13])
+# print(Card("Q", "hearts") in deck)
+# print(Card("Joker", "hearts") in deck)
+
+suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
+
+
+def spades_high(card):
+    rank_values = FrenchDeck.ranks.index(card.rank)
+    return rank_values * len(suit_values) + suit_values[card.suit]
+
+for card in sorted(deck, key=spades_high):
+    print(card)
