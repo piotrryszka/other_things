@@ -1,6 +1,3 @@
-
-# Kod do rozdziału 02 - Wyjątki w Pythonie
-
 # Z BŁĘDAMI!
 # Ten kod zawiera co najmniej 9 defektów.
 # Spróbuj je naprawić na podstawie komunikatów o błędach.

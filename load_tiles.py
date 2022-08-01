@@ -1,6 +1,3 @@
-
-# Kod do rozdziału 02 - Wyjątki w Pythonie
-
 from pygame import image, Rect, Surface
 
 TILE_POSITIONS = [
