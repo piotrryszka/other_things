@@ -2,27 +2,27 @@
 # Ten kod zawiera co najmniej 9 defektów.
 # Spróbuj je naprawić na podstawie komunikatów o błędach.
 
-imprt pygame
-from pygame import imagge, Rect
+import pygame
+from pygame import image, Rect
 
 
-TILE_POSITIONS = [
+TILE_POSITIONS =[
     ('#', 0, 0),  # ściana
-    (' ', 0, 1)   # podłoga
+    (' ', 0, 1),   # podłoga
     ('.', 2, 0),  # punkt
-
+]
 SIZE = 32
 
 image = 'tiles.xpm'
 
 
-def load_tiles()
+def load_tiles():
     """
     Ładuje kafelki z pliku graficznego do słownika.
     Zwraca krotkę w postaci (obraz, kafelek_dict)
     """
     tiles = {}
-    tile_img = image.loaad('tiless.xpm')
+    tile_img = image.load('tiless.xpm')
     for x, y in TILEPOSITIONS:
         rect = Rect(x*SIZE, y*SIZE, SIZE, SIZE)
         tiles[symbol] = rect
